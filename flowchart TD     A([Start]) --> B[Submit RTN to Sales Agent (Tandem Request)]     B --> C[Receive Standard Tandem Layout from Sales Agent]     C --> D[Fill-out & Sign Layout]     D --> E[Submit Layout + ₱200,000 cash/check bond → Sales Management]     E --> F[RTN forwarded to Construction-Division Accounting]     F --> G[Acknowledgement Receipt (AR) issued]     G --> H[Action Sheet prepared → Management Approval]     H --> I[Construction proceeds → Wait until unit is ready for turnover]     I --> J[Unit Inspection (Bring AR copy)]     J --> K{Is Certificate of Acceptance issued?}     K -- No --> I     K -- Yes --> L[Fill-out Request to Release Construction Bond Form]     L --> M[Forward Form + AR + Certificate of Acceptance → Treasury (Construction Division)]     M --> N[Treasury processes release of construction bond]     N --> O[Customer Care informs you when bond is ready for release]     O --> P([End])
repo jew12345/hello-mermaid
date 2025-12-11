@@ -1,0 +1,17 @@
+flowchart TD
+B --> C[Receive Standard Tandem Layout from Sales Agent]
+C --> D[Fill-out & Sign Layout]
+D --> E[Submit Layout + ₱200,000 cash/check bond → Sales Management]
+E --> F[RTN forwarded to Construction-Division Accounting]
+ F --> G[Acknowledgement Receipt (AR) issued]
+ G --> H[Action Sheet prepared → Management Approval]
+ H --> I[Construction proceeds → Wait until unit is ready for turnover]
+ I --> J[Unit Inspection (Bring AR copy)]
+ J --> K{Is Certificate of Acceptance issued?}
+ K -- No --> I
+ K -- Yes --> L[Fill-out Request to Release Construction Bond Form]
+  L --> M[Forward Form + AR + Certificate of Acceptance → Treasury (Construction Division)]
+   M --> N[Treasury processes release of construction bond]
+    N --> O[Customer Care informs you when bond is ready for release]
+     O --> P([End])
+    
